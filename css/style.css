@@ -22,6 +22,18 @@ body {
     position: absolute;
     transform: translate(-50%,-50%);
     padding: 70px 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    border: 1px solid red;
+}
+form *{
+    /* margin: 10px 0; */
 }
 .loginCont img {
     width: 30%;
@@ -31,4 +43,16 @@ body {
     left: calc(50% - 50px);
     /* border: 2px solid red; */
 }
-h1 {}
+h1 {
+    margin: 0;
+    padding: 0 0 20px 0;
+    text-align: center;
+    font-size: 22px;
+}
+.loginCont p {
+    font-weight: bold;
+}
+.loginCont input {
+    margin-bottom: 20px;
+}
+.loginCont input [type="text"], input [type="password"]
