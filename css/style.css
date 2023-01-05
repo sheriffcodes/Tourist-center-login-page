@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Roboto:wght@100;300;400&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -12,47 +15,105 @@ body {
     height: 100vh;
     font-family: sans-serif;
 }
+header ul{
+    display: flex;
+    border: none;
+    padding: 10px;
+    list-style: none;
+    font-family: 'Roboto';
+    justify-content: flex-end;
+    background: #3d3d55;
+}
+li {
+    padding: 0 20px;
+}
+body header .heading {
+    width: 100%;
+    font-family: 'Roboto';
+    color: #ccbfc3;
+    font-size: 16px;
+    text-align: left;
+    font-weight: bolder;
+}
+nav a {
+    text-decoration: none;
+    color: #a8a5a6;;
+}
+nav a:hover {
+    color: #fef053;
+}
+
 .loginCont {
     width: 325px;
     height: 425px;
-    background-color: black;
+    background-color: #202c41;
     color: white;
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%,-50%);
-    padding: 70px 30px;
+    padding: 60px 30px;
     border-radius: 10px;
-    border: 2px solid white;
+    border: 2px solid #7e6468;
 
 }
 form {
     display: flex;
     flex-direction: column;
-    /* justify-content: space-evenly; */
-    border: 1px solid red;
 }
-form *{
-    /* margin: 10px 0; */
-}
+
 .loginCont img {
-    width: 30%;
+    width: 40%;
     border-radius: 50%;
     position: absolute;
     top: -50px;
-    left: calc(50% - 50px);
-    /* border: 2px solid red; */
+    left: calc(50% - 70px);
 }
+
 h1 {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0 0 20px 0;
     text-align: center;
     font-size: 22px;
 }
 .loginCont p {
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 .loginCont input {
     margin-bottom: 20px;
 }
-.loginCont input [type="text"], input [type="password"]
+.loginCont form input[type="text"], input[type="password"] {
+    border: none;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 16px;
+}
+.loginCont input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #f04e27;
+    /* background: #fb2525; */
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginCont input[type="submit"]:hover {
+    cursor: pointer;
+    background: #fef053;
+    color: black;
+}
+.loginCont a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+.loginCont a:hover {
+    color: #fef053;
+}
